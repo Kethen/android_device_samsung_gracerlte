@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=gracelte
+DEVICE=gracerlte
 VENDOR=samsung
 
 export INITIAL_COPYRIGHT_YEAR=2017

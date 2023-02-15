@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_gracelte",
+    name: "libinit_gracerlte",
     recovery_available: true,
-    srcs: ["init_gracelte.cpp"],
+    srcs: ["init_gracerlte.cpp"],
     include_dirs: [
         "device/samsung/universal8890-common/init",
         "system/libbase/include",

@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=gracelte
+DEVICE=gracerlte
 VENDOR=samsung
 
 # Load extract_utils and do some sanity checks

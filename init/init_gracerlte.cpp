@@ -37,17 +37,17 @@
 
 using android::base::GetProperty;
 
-// we are reusing note fe props here too for compatibility reasons, might want to adapt to korean ones too eventually
+// We might want to adapt korean variants too eventually
 void vendor_load_properties()
 {
     std::string bootloader = GetProperty("ro.bootloader", "");
 
-        property_override("ro.build.description", "gracerltexx-user 9 PPR1.180610.011 N935FXXU8CVG2 release-keys");
-        set_ro_product_prop("device", "gracerlte");
-        set_ro_build_prop("fingerprint", "samsung/gracerltexx/gracerlte:9/PPR1.180610.011/N935FXXU8CVG2:user/release-keys");
-        set_ro_product_prop("model", "SM-N935F");
-        set_ro_product_prop("name", "graceltexx");
-        gsm_properties("9");
+    property_override("ro.build.description", "gracerltexx-user 9 PPR1.180610.011 N935FXXU8CVG2 release-keys");
+    set_ro_product_prop("device", "gracerlte");
+    set_ro_build_prop("fingerprint", "samsung/gracerltexx/gracerlte:9/PPR1.180610.011/N935FXXU8CVG2:user/release-keys");
+    set_ro_product_prop("model", "SM-N935F");
+    set_ro_product_prop("name", "gracerltexx");
+    gsm_properties("9");
 
     std::string device = GetProperty("ro.product.device", "");
     LOG(ERROR) << "Found bootloader id " << bootloader <<  " setting build properties for "

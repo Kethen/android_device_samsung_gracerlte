@@ -16,10 +16,11 @@
 # inherit from common
 include device/samsung/universal8890-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/gracelte
+DEVICE_PATH := device/samsung/gracerlte
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gracerltexx,gracerlte,graceltexx,gracelte
+# todo, old n7 has its own builds for now
 # graceltektt graceltelgt gracelteskt are original note 7 korean variants
 # and gracerltektt gracerltelgt gracerlteskt are note fe korean variants
 
@@ -30,12 +31,11 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gracelte
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gracerlte
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
-TARGET_KERNEL_CONFIG := exynos8890-gracelte_bl6_defconfig
-# We should use gracelte_defconfig for note fe
+TARGET_KERNEL_CONFIG := exynos8890-gracelte_defconfig
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
@@ -49,4 +49,4 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 VENDOR_SECURITY_PATCH := 2021-04-01
 
 # inherit from the proprietary version
-include vendor/samsung/gracelte/BoardConfigVendor.mk
+include vendor/samsung/gracerlte/BoardConfigVendor.mk

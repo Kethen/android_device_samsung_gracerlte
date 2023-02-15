@@ -18,16 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from gracelte device
-$(call inherit-product, device/samsung/gracelte/device.mk)
+# Inherit from gracerlte device
+$(call inherit-product, device/samsung/gracerlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := gracelte
-PRODUCT_NAME := lineage_gracelte
+PRODUCT_DEVICE := gracerlte
+PRODUCT_NAME := lineage_gracerlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N935F
 PRODUCT_MANUFACTURER := samsung
