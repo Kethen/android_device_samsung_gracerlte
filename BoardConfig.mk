@@ -26,6 +26,9 @@ TARGET_OTA_ASSERT_DEVICE := gracerltexx,gracerlte,graceltexx,gracelte
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# Fingerprint
+TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gracelte
 
@@ -33,6 +36,11 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gracelte
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
 TARGET_KERNEL_CONFIG := exynos8890-gracelte_bl6_defconfig
 # We should use gracelte_defconfig for note fe
+
+# Shims
+TARGET_LD_SHIM_LIBS += \
+    /vendor/lib/libbauthserver.so|/vendor/lib/libbauthtzcommon_shim.so \
+    /vendor/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
