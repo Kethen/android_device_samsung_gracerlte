@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=hero2lte
+DEVICE=gracelte
 VENDOR=samsung
 
 export INITIAL_COPYRIGHT_YEAR=2017

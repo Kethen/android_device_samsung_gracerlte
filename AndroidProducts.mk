@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hero2lte.mk
+    $(LOCAL_DIR)/lineage_gracelte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hero2lte-user \
-    lineage_hero2lte-userdebug \
-    lineage_hero2lte-eng
+    lineage_gracelte-user \
+    lineage_gracelte-userdebug \
+    lineage_gracelte-eng

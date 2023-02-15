@@ -21,10 +21,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    libbauthtzcommon_shim
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     WifiOverlay
@@ -33,4 +29,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/samsung/universal8890-common/device-common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/samsung/hero2lte/hero2lte-vendor.mk)
+$(call inherit-product, vendor/samsung/gracelte/gracelte-vendor.mk)

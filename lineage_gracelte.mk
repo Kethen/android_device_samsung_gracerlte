@@ -18,25 +18,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from hero2lte device
-$(call inherit-product, device/samsung/hero2lte/device.mk)
+# Inherit from gracelte device
+$(call inherit-product, device/samsung/gracelte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := hero2lte
-PRODUCT_NAME := lineage_hero2lte
+PRODUCT_DEVICE := gracelte
+PRODUCT_NAME := lineage_gracelte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G935F
+PRODUCT_MODEL := SM-N935F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=hero2ltexx \
-    PRIVATE_BUILD_DESC="hero2ltexx-user 8.0.0 R16NW G935FXXU2ERD5 release-keys"
+    PRODUCT_NAME=gracerltexx\
+    PRIVATE_BUILD_DESC="gracerltexx-user 9 PPR1.180610.011 N935FXXU8CVG2 release-keys"
 
-BUILD_FINGERPRINT := samsung/hero2ltexx/hero2lte:8.0.0/R16NW/G935FXXU2ERD5:user/release-keys
+# we use gracer (nfe) fp here as its more up to date
+
+BUILD_FINGERPRINT := samsung/gracerltexx/gracerlte:9/PPR1.180610.011/N935FXXU8CVG2:user/release-keys
