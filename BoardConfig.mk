@@ -19,10 +19,7 @@ include device/samsung/universal8890-common/BoardConfigCommon.mk
 DEVICE_PATH := device/samsung/gracerlte
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gracerltexx,gracerlte,graceltexx,gracelte
-# todo, old n7 has its own builds for now
-# graceltektt graceltelgt gracelteskt are original note 7 korean variants
-# and gracerltektt gracerltelgt gracerlteskt are note fe korean variants
+TARGET_OTA_ASSERT_DEVICE := gracerltexx,gracerlte,graceltexx,gracelte,graceltektt,graceltelgt,gracelteskt,gracerltektt,gracerltelgt,gracerlteskt
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
