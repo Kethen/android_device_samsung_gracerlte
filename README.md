@@ -1,6 +1,6 @@
 Copyright 2023 - The LineageOS Project
 
-Device configuration for Samsung Galaxy Note FE
+Device configuration for Samsung Galaxy Note FE/Note7
 ========================================
 
 Basic   | Specification List
